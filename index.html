@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "indexStyle.css">
+    <script>
+        function datecalc(){
+          var a = document.getElementById('input1').value;
+          a = parseInt(a);
+          var b = document.getElementById('input2').value;
+          b = parseInt(b);
+          var aquarius = "<img src = 'aquarius.png'>"
+          var aq = "The Water Bearer: Aquarius";
+          var capricorn = "<img src = 'capricorn.png'>"
+          var cap = "The Sea Goat: Capricorn"
+          var pisces = "<img src = 'pisces.png'>"
+          var pi = "The Fish: Pisces";
+          var aries = "<img src = 'aries.png'>"
+          var ar = "The Ram: Aries"
+          var taurus = "<img src = 'taurus.png'>"
+          var ta = "The Bull: Taurus"
+          var gemini = "<img src = 'gemini.png'>"
+          var ge = "The Twins: Gemini"
+          var cancer = "<img src = 'cancer.png'>"
+          var can = "The Crab: Cancer"
+          var leo = "<img src = 'leo.png'>"
+          var le = "The Lion: Leo";
+          var virgo = "<img src = 'virgo.png'>"
+          var vi = "The Virgin: Virgo"
+          var libra = "<img src = 'libra.png'>"
+          var li = "The Scales: Libra"
+          var scorpio = "<img src = 'scorpio.png'>"
+          var sc = "The Scorpion: Scorpio"
+          var sagi = "<img src = 'sagi.png'>"
+          var sa = "The Archer: Sagittarius"
+          if(a == 1){
+            if(b >= 20){
+              document.getElementById("output").innerHTML = aquarius;
+              document.getElementById("output2").innerHTML = aq;
+            }
+            else{
+              document.getElementById("output").innerHTML = capricorn;
+              document.getElementById("output2").innerHTML = cap;
+            }
+          }
+          else if(a == 2){
+            if(b <= 18){
+              document.getElementById("output").innerHTML = aquarius;
+              document.getElementById("output2").innerHTML = aq;
+            }
+            else{
+              document.getElementById("output").innerHTML = pisces;
+              document.getElementById("output2").innerHTML = pi;
+            }
+          }
+          else if(a == 3){
+            if(b <= 20){
+              document.getElementById("output").innerHTML = pisces;
+              document.getElementById("output2").innerHTML = pi;
+            }
+            else{
+              document.getElementById("output").innerHTML = aries;
+              document.getElementById("output2").innerHTML = ar;
+            }
+          }
+          else if(a == 4){
+            if(b <= 19){
+              document.getElementById("output").innerHTML = aries;
+              document.getElementById("output2").innerHTML = ar;
+            }
+            else{
+              document.getElementById("output").innerHTML = taurus;
+              document.getElementById("output2").innerHTML = ta;
+            }
+          }
+          else if(a == 5){
+            if(b <= 20){
+              document.getElementById("output").innerHTML = taurus;
+              document.getElementById("output2").innerHTML = ta;
+            }
+            else{
+              document.getElementById("output").innerHTML = gemini;
+              document.getElementById("output2").innerHTML = ge;
+            }
+          }
+          else if(a == 6){
+            if(b <= 20){
+              document.getElementById("output").innerHTML = gemini;
+              document.getElementById("output2").innerHTML = ge;
+            }
+            else{
+              document.getElementById("output").innerHTML = cancer;
+              document.getElementById("output2").innerHTML = can;
+            }
+          }
+          else if(a == 7){
+            if(b <= 22){
+              document.getElementById("output").innerHTML = cancer;
+              document.getElementById("output2").innerHTML = can;
+            }
+            else{
+              document.getElementById("output").innerHTML = leo;
+              document.getElementById("output2").innerHTML = le;
+            }
+          }
+          else if(a == 8){
+            if(b <= 22){
+              document.getElementById("output").innerHTML = leo;
+              document.getElementById("output2").innerHTML = le;
+            }
+            else{
+              document.getElementById("output").innerHTML = virgo;
+              document.getElementById("output2").innerHTML = vi;
+            }
+          }
+          else if(a == 9){
+            if(b <= 22){
+              document.getElementById("output").innerHTML = virgo;
+              document.getElementById("output2").innerHTML = vi;
+            }
+            else{
+              document.getElementById("output").innerHTML = libra;
+              document.getElementById("output2").innerHTML = li;
+            }
+          }
+          else if(a == 10){
+            if(b <= 22){
+              document.getElementById("output").innerHTML = libra;
+              document.getElementById("output2").innerHTML = li;
+            }
+            else{
+              document.getElementById("output").innerHTML = scorpio;
+              document.getElementById("output2").innerHTML = sc;
+            }
+          }
+          else if(a == 11){
+            if(b <= 21){
+              document.getElementById("output").innerHTML = scorpio;
+              document.getElementById("output2").innerHTML = sc;
+            }
+            else{
+              document.getElementById("output").innerHTML = sagi;
+              document.getElementById("output2").innerHTML = sa;
+            }
+          }
+          else if(a == 12){
+            if(b <= 21){
+              document.getElementById("output").innerHTML = sagi;
+              document.getElementById("output2").innerHTML = sa;
+            }
+            else{
+              document.getElementById("output").innerHTML = capricorn;
+              document.getElementById("output2").innerHTML = cap;
+            }
+          }
+        }
+      </script>
+  </head>
+  <body>
+<input type = "text" id = "input1" value = "Month, in integers.">
+<input type = "text" id = "input2" value = "Day, in integers.">
+<input type = "button" id = "b1" value = "Enter" onclick = "datecalc()">
+<br><br><br><br>
+<span id = "output"></span>
+<br>
+<span id = "output2"></span>
+  </body>
+</html>

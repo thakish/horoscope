@@ -1,0 +1,11 @@
+#b1:hover{
+  background-color: black;
+  color: white;
+}
+body{
+  background-image: url("zodiac.png");
+}
+#output2{
+  color: red;
+  font-family: sans-serif;
+}
